@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /thank-you.html
+Sitemap: https://www.teodordev.co.za/sitemap.xml

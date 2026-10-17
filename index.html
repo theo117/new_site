@@ -9,7 +9,7 @@
   <meta property="og:site_name" content="teodor dev tech">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' https: data:; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self'; connect-src 'self' https://api.web3forms.com; frame-src 'none'; form-action 'self' https://api.web3forms.com">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' https: data:; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self'; connect-src 'self' https://api.web3forms.com; frame-src 'self'; form-action 'self' https://api.web3forms.com">
   <title>teodor dev tech | Websites that work for your business</title>
   <meta name="description" content="Business websites, WordPress development, web apps and Android apps for South African and U.S. businesses. Explore real projects and find the right starting point.">
   <meta property="og:type" content="website">
@@ -18,14 +18,14 @@
   <meta property="og:image" content="https://www.teodordev.co.za/image1.png">
   <meta name="twitter:image" content="https://www.teodordev.co.za/image1.png">
   <link rel="icon" type="image/png" href="assets/favicon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="reference.css">
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfessionalService", "name": "teodor dev tech", "url": "https://www.teodordev.co.za/", "logo": "https://www.teodordev.co.za/image1.png", "image": "https://www.teodordev.co.za/image1.png", "description": "Business websites, WordPress development, web apps and Android apps for South African and U.S. businesses.", "telephone": "+27 60 636 0886", "areaServed": ["ZA", "US"], "serviceType": ["Business website design", "WordPress development", "Website redesign", "Web app development", "Android app development"], "sameAs": ["https://linkedin.com/teodor-web-solutions/", "https://facebook.com/teodorwebsolutions"]}</script>
   <script src="app.js" defer></script>
+  <script src="spatial.js" defer></script>
 </head>
-<body>
+<body class="scene-intro">
+  <div class="experience-backdrop" aria-hidden="true"><img class="earth-poster" src="assets/earth-poster.jpg" alt=""><iframe id="experience-scene" title="" tabindex="-1" data-src="assets/edolus/scene.html"></iframe></div>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="container header-inner">
@@ -36,10 +36,11 @@
   </header>
   <main id="main">
     <section class="hero" id="home">
+
       <div class="container hero-grid">
         <div class="hero-copy">
           <p class="eyebrow light">Business-first digital development</p>
-          <h1>A better digital<br>presence.<br><span>A stronger<br>first impression.</span></h1>
+          <h1>A better digital presence. <span>A stronger first impression.</span></h1>
           <p class="hero-description">Websites, web apps and Android apps that help your business look credible, communicate clearly and turn interest into enquiries.</p>
           <div class="actions"><a class="button" href="#contact">Discuss your project</a><a class="button button-ghost" href="#work">Explore the work</a></div>
           <p class="hero-note">For service businesses and growing brands in South Africa and the U.S.</p>

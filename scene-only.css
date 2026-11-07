@@ -1,0 +1,2 @@
+/* The imported document supplies pixels only; business content lives in the parent. */
+html,body{background:#070707!important;scrollbar-width:none!important}html::-webkit-scrollbar,body::-webkit-scrollbar{display:none!important}body{visibility:hidden!important}body canvas{visibility:hidden!important}body canvas[data-business-scene]{visibility:visible!important}body:before,body:after{visibility:hidden!important}

@@ -1,0 +1,1 @@
+(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,15789,e=>{"use strict";var i=e.i(89705);e.S([i,"OrdineScene,f"],15789)},60523,function(e){e.n(e.i(15789))}]);

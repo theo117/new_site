@@ -1,0 +1,1 @@
+(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,59390,o=>{"use strict";var i=o.i(71645),t=o.i(4180);o.s(["ArrivoLavori",0,function(){return(0,i.useLayoutEffect)(()=>{if(!(0,t.mondoGiaVivo)())return;let o=globalThis.__passaggio;o&&(o.daStoria=0)},[]),null}])}]);

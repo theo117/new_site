@@ -22,22 +22,22 @@
   <link rel="stylesheet" href="reference.css">
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfessionalService", "name": "teodor dev tech", "url": "https://www.teodordev.co.za/", "logo": "https://www.teodordev.co.za/image1.png", "image": "https://www.teodordev.co.za/image1.png", "description": "Business websites, WordPress development, web apps and Android apps for South African and U.S. businesses.", "telephone": "+27 60 636 0886", "areaServed": ["ZA", "US"], "serviceType": ["Business website design", "WordPress development", "Website redesign", "Web app development", "Android app development"], "sameAs": ["https://linkedin.com/teodor-web-solutions/", "https://facebook.com/teodorwebsolutions"]}</script>
   <script src="app.js" defer></script>
-  <script src="spatial.js" defer></script>
+  <script src="scene-background.js" defer></script>
 </head>
-<body class="scene-intro">
-  <div class="experience-backdrop" aria-hidden="true"><img class="earth-poster" src="assets/earth-poster.jpg" alt=""><iframe id="experience-scene" title="" tabindex="-1" data-src="assets/edolus/scene.html"></iframe></div>
+<body>
+  <iframe id="reference-scene" class="reference-scene" title="" aria-hidden="true" tabindex="-1" data-src="/en/scene/?background=1"></iframe>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#home" aria-label="teodor dev tech home"><img src="assets/image1.png" alt="" width="42" height="42"><span>teodor<span class="brand-detail">dev tech</span></span></a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation"><span>Menu</span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="1.7"/></svg></button>
-      <nav id="navigation" aria-label="Main navigation"><a href="#services">Services</a><a href="#work">Selected work</a><a href="#packages">Packages</a><a href="#about">About</a><a class="button button-small" href="#contact">Let’s talk</a></nav>
+      <nav id="navigation" aria-label="Main navigation"><a href="#services">Services</a><a href="#work">Projects</a><a href="#packages">Packages</a><a href="#about">About</a><a class="button button-small" href="#contact">Let’s talk</a></nav>
     </div>
   </header>
   <main id="main">
     <section class="hero" id="home">
 
-      <div class="container hero-grid">
+      <div class="container hero-grid"><div class="hero-identity"><span>teodor dev tech</span><span>Websites, web apps & Android development</span></div>
         <div class="hero-copy">
           <p class="eyebrow light">Business-first digital development</p>
           <h1>A better digital presence. <span>A stronger first impression.</span></h1>
@@ -45,13 +45,14 @@
           <div class="actions"><a class="button" href="#contact">Discuss your project</a><a class="button button-ghost" href="#work">Explore the work</a></div>
           <p class="hero-note">For service businesses and growing brands in South Africa and the U.S.</p>
         </div>
-        <div class="hero-work">
+      </div>
+      <div class="container featured-work">        <div class="hero-work">
           <div class="work-browser"><span class="browser-dots" aria-hidden="true">● ● ●</span><span>Selected project / WordPress</span></div>
           <button class="hero-image-button" type="button" data-project="wedding" aria-label="View the Wedding Website project"><img src="assets/pro10.webp" width="1305" height="626" alt="The wedding website, with elegant typography over a sunset photograph" fetchpriority="high"></button>
           <div class="hero-project-caption"><div><span class="eyebrow light">Built by teodor dev tech</span><h2>Wedding Website</h2><p>Considered design. A clear guest journey.</p></div><button class="text-button light-text" type="button" data-project="wedding">View project <span aria-hidden="true">＋</span></button></div>
           <div class="hero-principles"><div><span>01</span><strong>Clear messaging</strong></div><div><span>02</span><strong>Mobile-ready</strong></div><div><span>03</span><strong>Practical next steps</strong></div></div>
         </div>
-      </div>
+</div>
       <div class="container hero-bottom"><span>YOUR BUSINESS. CLEARLY PRESENTED.</span><span>Strategy &nbsp; / &nbsp; Design &nbsp; / &nbsp; Development</span></div>
     </section>
 
@@ -71,13 +72,13 @@
       </div>
     </section>
 
-    <section id="work" class="section work-section">
-      <div class="container">
-        <div class="section-heading"><div><p class="eyebrow">Selected work</p><h2>Different businesses.<br>The same attention to detail.</h2></div><p>Real builds, each shaped around a different audience. Take a closer look at the presentation, platform and purpose.</p></div>
+    <section aria-labelledby="work-title" id="work" class="section work-section">
+      <div class="project-stage container">
+        <div class="project-heading"><div><p class="eyebrow">Selected work</p><h2 id="work-title">Different businesses.<br>The same attention to detail.</h2></div><p>Real builds, each shaped around a different audience. Take a closer look at the presentation, platform and purpose.</p></div>
         <div class="projects-grid">
-          <article class="project"><button class="project-image" type="button" data-project="fintech" aria-label="View Financial Technology Advisory Services project"><img src="assets/fintechadv.webp" width="1244" height="644" alt="Financial Technology Advisory Services business website" loading="lazy"><span class="project-open" aria-hidden="true">＋</span></button><div class="project-category">Business website · Custom front-end</div><h3>Financial Technology<br>Advisory Services</h3><p>Professional positioning and service-led navigation.</p><button class="text-button" type="button" data-project="fintech">Project details <span aria-hidden="true">＋</span></button></article>
-          <article class="project"><button class="project-image" type="button" data-project="wedding" aria-label="View Wedding Website project"><img src="assets/pro10.webp" width="1305" height="626" alt="Elegant WordPress wedding website" loading="lazy"><span class="project-open" aria-hidden="true">＋</span></button><div class="project-category">Event website · WordPress</div><h3>Wedding Website</h3><p>Elegant event presentation with a clear guest journey.</p><button class="text-button" type="button" data-project="wedding">Project details <span aria-hidden="true">＋</span></button></article>
-          <article class="project"><button class="project-image" type="button" data-project="ferrari" aria-label="View Ferrari Fan Page Website project"><img src="assets/pro9.webp" width="1291" height="619" alt="Bold red Ferrari fan page website" loading="lazy"><span class="project-open" aria-hidden="true">＋</span></button><div class="project-category">Fan project · Custom front-end</div><h3>Ferrari Fan Page Website</h3><p>A bold branded experience built with HTML, CSS and JavaScript.</p><button class="text-button" type="button" data-project="ferrari">Project details <span aria-hidden="true">＋</span></button></article>
+          <article class="project"><button class="project-image" type="button" data-project="fintech" aria-label="View Financial Technology Advisory Services project"><img src="assets/fintechadv.webp" width="1244" height="644" alt="Financial Technology Advisory Services business website" loading="lazy"><span class="project-open" aria-hidden="true">＋</span></button><div class="project-caption"><div class="project-category">Business website · Custom front-end</div><h3>Financial Technology<br>Advisory Services</h3><p>Professional positioning and service-led navigation.</p><button class="text-button" type="button" data-project="fintech">Project details <span aria-hidden="true">＋</span></button></div></article>
+          <article class="project"><button class="project-image" type="button" data-project="wedding" aria-label="View Wedding Website project"><img src="assets/pro10.webp" width="1305" height="626" alt="Elegant WordPress wedding website" loading="lazy"><span class="project-open" aria-hidden="true">＋</span></button><div class="project-caption"><div class="project-category">Event website · WordPress</div><h3>Wedding Website</h3><p>Elegant event presentation with a clear guest journey.</p><button class="text-button" type="button" data-project="wedding">Project details <span aria-hidden="true">＋</span></button></div></article>
+          <article class="project"><button class="project-image" type="button" data-project="ferrari" aria-label="View Ferrari Fan Page Website project"><img src="assets/pro9.webp" width="1291" height="619" alt="Bold red Ferrari fan page website" loading="lazy"><span class="project-open" aria-hidden="true">＋</span></button><div class="project-caption"><div class="project-category">Fan project · Custom front-end</div><h3>Ferrari Fan Page Website</h3><p>A bold branded experience built with HTML, CSS and JavaScript.</p><button class="text-button" type="button" data-project="ferrari">Project details <span aria-hidden="true">＋</span></button></div></article>
         </div>
       </div>
     </section>

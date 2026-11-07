@@ -1,2 +1,27 @@
 /* The imported document supplies pixels only; business content lives in the parent. */
-html,body{background:#070707!important;scrollbar-width:none!important}html::-webkit-scrollbar,body::-webkit-scrollbar{display:none!important}body{visibility:hidden!important}body canvas{visibility:hidden!important}body canvas[data-business-scene]{visibility:visible!important}body:before,body:after{visibility:hidden!important}
+html,
+body {
+  background: #070707 !important;
+  scrollbar-width: none !important;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none !important;
+}
+
+/* Animation styles set visibility on descendants and pseudo-elements directly.
+   Hide every imported element explicitly, including those with inline visibility. */
+body,
+body *,
+body::before,
+body::after,
+body *::before,
+body *::after {
+  visibility: hidden !important;
+}
+
+/* Visibility can be restored on this canvas without exposing its ancestors. */
+body canvas[data-business-scene] {
+  visibility: visible !important;
+}

@@ -55,7 +55,7 @@ def patch(source):
  source=source.replace('Instagram','Facebook')
  return source
 data=patch((root/'tools/reference-source/fresh.html').read_text())
-data=data.replace('<head>','<head><script src="/scene-driver.js" defer></script><link rel="stylesheet" href="/scene-only.css">')
+data=data.replace('<head>','<head><script src="/scene-driver.js?v=20261107-scene-2" defer></script><link rel="stylesheet" href="/scene-only.css?v=20261107-scene-2">')
 p=root/'en/scene/index.html'
 p.parent.mkdir(parents=True,exist_ok=True)
 p.write_text(data)

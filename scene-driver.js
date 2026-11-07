@@ -3,8 +3,14 @@
   if(window.parent===window)return;
   history.replaceState(null,'','/en?background=1');
   const origin=location.origin;
+  const protocol='scene-canvas-v2';
+  // Enforce isolation before announcing readiness, even if an older CSS file is cached.
+  const isolation=document.createElement('style');
+  isolation.id='business-scene-isolation';
+  isolation.textContent='body,body *,body::before,body::after,body *::before,body *::after{visibility:hidden!important}body canvas[data-business-scene]{visibility:visible!important}';
+  document.head.append(isolation);
   let started=false,ready=false,holding=false,lastY=-1;
-  const tell=(type,extra={})=>parent.postMessage({source:'business-scene',type,...extra},origin);
+  const tell=(type,extra={})=>parent.postMessage({source:'business-scene',protocol,type,...extra},origin);
   function initialize(){
     const silent=[...document.querySelectorAll('button')].find(b=>/^silent$/i.test(b.textContent.trim()));
     if(silent&&!started){silent.click();started=true;}

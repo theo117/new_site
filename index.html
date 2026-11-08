@@ -19,41 +19,33 @@
   <meta name="twitter:image" content="https://www.teodordev.co.za/image1.png">
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="reference.css?v=20261107-header-1">
+  <link rel="stylesheet" href="cinematic.css">
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfessionalService", "name": "teodor dev tech", "url": "https://www.teodordev.co.za/", "logo": "https://www.teodordev.co.za/image1.png", "image": "https://www.teodordev.co.za/image1.png", "description": "Business websites, WordPress development, web apps and Android apps for South African and U.S. businesses.", "telephone": "+27 60 636 0886", "areaServed": ["ZA", "US"], "serviceType": ["Business website design", "WordPress development", "Website redesign", "Web app development", "Android app development"], "sameAs": ["https://linkedin.com/teodor-web-solutions/", "https://facebook.com/teodorwebsolutions"]}</script>
   <script src="app.js" defer></script>
-  <script src="scene-background.js?v=20261107-scene-2" defer></script>
+  <script src="motion.js" defer></script>
 </head>
 <body>
-  <iframe id="reference-scene" class="reference-scene" title="" aria-hidden="true" tabindex="-1" data-src="/en/scene/?background=1&v=20261107-scene-2"></iframe>
+
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#home" aria-label="teodor dev tech home"><img src="assets/image1.png" alt="" width="42" height="42"><span>teodor<span class="brand-detail">dev tech</span></span></a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation"><span>Menu</span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="1.7"/></svg></button>
-      <nav id="navigation" aria-label="Main navigation"><a href="#services">Services</a><a href="#work">Projects</a><a href="#packages">Packages</a><a href="#about">About</a><a class="button button-small" href="#contact">Let’s talk</a></nav>
+      <nav id="navigation" aria-label="Main navigation"><a href="#services">Services</a><a href="#work">Projects</a><a href="#packages">Packages</a><a href="#about">About</a><a class="text-button" href="#contact">Let’s talk ↗</a></nav>
     </div>
   </header>
+  <div class="transition-curtain" aria-hidden="true"><span>teodor dev tech</span></div>
   <main id="main">
-    <section class="hero" id="home">
-
-      <div class="container hero-grid"><div class="hero-identity"><span>teodor dev tech</span><span>Websites, web apps & Android development</span></div>
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-atmosphere" aria-hidden="true"><div class="horizon"></div><div class="sculpture"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+      <div class="container hero-grid">
+        <div class="hero-identity"><span>Independent design & development</span><span>Websites / Web apps / Android</span></div>
         <div class="hero-copy">
-          <p class="eyebrow light">Business-first digital development</p>
-          <h1>A better digital presence. <span>A stronger first impression.</span></h1>
-          <p class="hero-description">Websites, web apps and Android apps that help your business look credible, communicate clearly and turn interest into enquiries.</p>
-          <div class="actions"><a class="button" href="#contact">Discuss your project</a><a class="button button-ghost" href="#work">Explore the work</a></div>
-          <p class="hero-note">For service businesses and growing brands in South Africa and the U.S.</p>
+          <h1 id="hero-title"><span class="line">A stronger</span><span class="line">digital presence.</span></h1>
+          <div class="hero-support"><p class="hero-description">Websites, web apps & Android development.<br>Considered design. Built around your business.</p><a class="text-button hero-cta" href="#work">Explore the work <span aria-hidden="true">↗</span></a></div>
         </div>
+        <div class="hero-foot"><span>Teodor Dev Tech<br>Serving South Africa & the U.S.</span><a href="#contact">Have a project in mind? <span aria-hidden="true">↗</span></a></div>
       </div>
-      <div class="container featured-work">        <div class="hero-work">
-          <div class="work-browser"><span class="browser-dots" aria-hidden="true">● ● ●</span><span>Selected project / WordPress</span></div>
-          <button class="hero-image-button" type="button" data-project="wedding" aria-label="View the Wedding Website project"><img src="assets/pro10.webp" width="1305" height="626" alt="The wedding website, with elegant typography over a sunset photograph" fetchpriority="high"></button>
-          <div class="hero-project-caption"><div><span class="eyebrow light">Built by teodor dev tech</span><h2>Wedding Website</h2><p>Considered design. A clear guest journey.</p></div><button class="text-button light-text" type="button" data-project="wedding">View project <span aria-hidden="true">＋</span></button></div>
-          <div class="hero-principles"><div><span>01</span><strong>Clear messaging</strong></div><div><span>02</span><strong>Mobile-ready</strong></div><div><span>03</span><strong>Practical next steps</strong></div></div>
-        </div>
-</div>
-      <div class="container hero-bottom"><span>YOUR BUSINESS. CLEARLY PRESENTED.</span><span>Strategy &nbsp; / &nbsp; Design &nbsp; / &nbsp; Development</span></div>
     </section>
 
     <section id="services" class="section services-section">
@@ -73,13 +65,24 @@
     </section>
 
     <section aria-labelledby="work-title" id="work" class="section work-section">
-      <div class="project-stage container">
-        <div class="project-heading"><div><p class="eyebrow">Selected work</p><h2 id="work-title">Different businesses.<br>The same attention to detail.</h2></div><p>Real builds, each shaped around a different audience. Take a closer look at the presentation, platform and purpose.</p></div>
-        <div class="projects-grid">
-          <article class="project"><button class="project-image" type="button" data-project="fintech" aria-label="View Financial Technology Advisory Services project"><img src="assets/fintechadv.webp" width="1244" height="644" alt="Financial Technology Advisory Services business website" loading="lazy"><span class="project-open" aria-hidden="true">＋</span></button><div class="project-caption"><div class="project-category">Business website · Custom front-end</div><h3>Financial Technology<br>Advisory Services</h3><p>Professional positioning and service-led navigation.</p><button class="text-button" type="button" data-project="fintech">Project details <span aria-hidden="true">＋</span></button></div></article>
-          <article class="project"><button class="project-image" type="button" data-project="wedding" aria-label="View Wedding Website project"><img src="assets/pro10.webp" width="1305" height="626" alt="Elegant WordPress wedding website" loading="lazy"><span class="project-open" aria-hidden="true">＋</span></button><div class="project-caption"><div class="project-category">Event website · WordPress</div><h3>Wedding Website</h3><p>Elegant event presentation with a clear guest journey.</p><button class="text-button" type="button" data-project="wedding">Project details <span aria-hidden="true">＋</span></button></div></article>
-          <article class="project"><button class="project-image" type="button" data-project="ferrari" aria-label="View Ferrari Fan Page Website project"><img src="assets/pro9.webp" width="1291" height="619" alt="Bold red Ferrari fan page website" loading="lazy"><span class="project-open" aria-hidden="true">＋</span></button><div class="project-caption"><div class="project-category">Fan project · Custom front-end</div><h3>Ferrari Fan Page Website</h3><p>A bold branded experience built with HTML, CSS and JavaScript.</p><button class="text-button" type="button" data-project="ferrari">Project details <span aria-hidden="true">＋</span></button></div></article>
+      <div class="gallery-space container" role="region" aria-roledescription="carousel" aria-label="Selected projects" tabindex="0">
+        <div class="gallery-heading"><p class="eyebrow">Selected work / Three different perspectives</p><h2 id="work-title">Ideas, given shape.</h2></div>
+        <div class="gallery-field">
+          <article class="gallery-piece" data-gallery-piece="fintech">
+            <button class="gallery-image" type="button" data-project="fintech" aria-label="Open Financial Technology Advisory Services project details"><img src="assets/fintechadv.webp" width="1244" height="644" alt="Financial Technology Advisory Services website preview" loading="lazy"><span class="image-action" aria-hidden="true">View project ↗</span></button>
+            <div class="piece-copy"><p class="project-category">Business website · Custom front-end</p><h3>Financial Technology<br>Advisory Services</h3><p class="piece-description">Professional positioning and service-led navigation.</p><span class="piece-tech">HTML / CSS / JavaScript</span><button class="text-button" type="button" data-project="fintech">Explore project <span aria-hidden="true">↗</span></button></div>
+          </article>
+          <article class="gallery-piece" data-gallery-piece="wedding">
+            <button class="gallery-image" type="button" data-project="wedding" aria-label="Open Wedding Website project details"><img src="assets/pro10.webp" width="1305" height="626" alt="Wedding Website website preview" loading="lazy"><span class="image-action" aria-hidden="true">View project ↗</span></button>
+            <div class="piece-copy"><p class="project-category">Event website · WordPress</p><h3>Wedding<br>Website</h3><p class="piece-description">Elegant event presentation with a clear guest journey.</p><span class="piece-tech">WordPress</span><button class="text-button" type="button" data-project="wedding">Explore project <span aria-hidden="true">↗</span></button></div>
+          </article>
+          <article class="gallery-piece" data-gallery-piece="ferrari">
+            <button class="gallery-image" type="button" data-project="ferrari" aria-label="Open Ferrari Fan Page project details"><img src="assets/pro9.webp" width="1291" height="619" alt="Ferrari Fan Page website preview" loading="lazy"><span class="image-action" aria-hidden="true">View project ↗</span></button>
+            <div class="piece-copy"><p class="project-category">Personal fan project · Custom front-end</p><h3>Ferrari<br>Fan Page</h3><p class="piece-description">A personal exploration of bold automotive presentation.</p><span class="piece-tech">HTML / CSS / JavaScript</span><button class="text-button" type="button" data-project="ferrari">Explore project <span aria-hidden="true">↗</span></button></div>
+          </article>
         </div>
+        <div class="gallery-footer"><p class="gallery-hint">Select a perspective.<br>Use arrows, swipe or choose below.</p><div class="gallery-index" role="group" aria-label="Choose project"><button type="button" data-select-project="0" aria-pressed="true">01 <span>Advisory</span></button><button type="button" data-select-project="1" aria-pressed="false">02 <span>Wedding</span></button><button type="button" data-select-project="2" aria-pressed="false">03 <span>Ferrari</span></button></div><div class="gallery-arrows"><button type="button" data-gallery-step="-1" aria-label="Previous project">←</button><button type="button" data-gallery-step="1" aria-label="Next project">→</button></div></div>
+        <p id="gallery-status" class="sr-only" role="status" aria-live="polite"></p>
       </div>
     </section>
 
@@ -118,7 +121,7 @@
   <footer class="site-footer"><div class="container footer-top"><a class="brand" href="#home"><img src="assets/image1.png" width="42" height="42" alt=""><span>teodor<span class="brand-detail">dev tech</span></span></a><p>Clearer presentation.<br>Practical digital tools.</p><div class="footer-links"><a href="#services">Services</a><a href="#packages">Packages</a><a href="#faq">FAQ</a></div><div class="footer-links"><a href="https://linkedin.com/teodor-web-solutions/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://facebook.com/teodorwebsolutions" target="_blank" rel="noopener noreferrer">Facebook</a><a href="#contact">Start a conversation</a></div></div><div class="container footer-bottom"><span>© 2026 teodor dev tech. All rights reserved.</span><span>Serving South Africa & the U.S.</span></div></footer>
   <div class="mobile-cta"><a class="button" href="#contact">Discuss your project</a><a class="mobile-work-link" href="#work">View work</a></div>
 
-  <dialog id="project-dialog" class="project-dialog" aria-labelledby="project-title"><button class="dialog-close" type="button" data-close aria-label="Close project details">×</button><img id="project-dialog-image" src="assets/pro10.webp" alt="" width="1305" height="626"><div class="dialog-body"><p class="eyebrow" id="project-platform"></p><h2 id="project-title"></h2><p id="project-description"></p><p class="project-tech" id="project-tech"></p><div class="actions"><a class="button" id="project-live-link" href="https://wedding.teodordev.co.za" target="_blank" rel="noopener noreferrer">Open live site</a><button class="button button-outline" type="button" id="project-enquire">Discuss a similar project</button></div></div></dialog>
+  <dialog id="project-dialog" class="project-dialog" aria-labelledby="project-title"><button class="dialog-close" type="button" data-close aria-label="Close project details">×</button><img id="project-dialog-image" src="assets/pro10.webp" alt="" width="1305" height="626"><div class="detail-navigation"><span>Selected work</span><div><button type="button" data-detail-step="-1" aria-label="Previous project">←</button><button type="button" data-detail-step="1" aria-label="Next project">→</button></div></div><div class="dialog-body"><p class="eyebrow" id="project-platform"></p><h2 id="project-title"></h2><p id="project-description"></p><p class="project-tech" id="project-tech"></p><div class="actions"><a class="button" id="project-live-link" href="https://wedding.teodordev.co.za" target="_blank" rel="noopener noreferrer">Open live site</a><button class="button button-outline" type="button" id="project-enquire">Discuss a similar project</button></div></div></dialog>
 
   <dialog id="maker-dialog" class="maker-dialog" aria-labelledby="maker-title"><button class="dialog-close" type="button" data-close aria-label="Close concept maker">×</button><div class="dialog-body"><p class="eyebrow">Website concept maker</p><h2 id="maker-title">Give your idea a direction.</h2><p>Explore curated themes and page structures. This is a concept to discuss, not a finished website.</p><div class="maker-grid"><form id="maker-form"><label for="maker-business">Business name</label><input id="maker-business" maxlength="80" placeholder="Your business" value="Your business"><label for="maker-industry">Type of business</label><select id="maker-industry"><option value="service">Local service</option><option value="restaurant">Restaurant / café</option><option value="health">Health / wellness</option><option value="finance">Legal / finance</option><option value="creative">Portfolio / creative</option><option value="software">Software / app</option></select><label for="maker-style">Visual direction</label><select id="maker-style"><option value="modern">Modern</option><option value="luxury">Luxury</option><option value="friendly">Friendly</option><option value="bold">Bold</option><option value="minimal">Minimal</option></select><label for="maker-goal">What should the site achieve?</label><textarea id="maker-goal" rows="3" maxlength="400" placeholder="More quote requests, clearer services, online bookings…"></textarea><button class="button" type="submit">Preview concept</button></form><div><div class="concept-preview modern" id="concept-preview"><span id="concept-brand">Your business</span><span class="concept-label">CONCEPT PREVIEW</span><h3 id="concept-headline">Make your next project easier.</h3><p id="concept-description">Clear services, local credibility and a simple quote request.</p><span class="concept-cta" id="concept-cta">Request a quote</span><div class="concept-pages" id="concept-pages">Home · Services · Work · Contact</div></div><div class="concept-summary"><p class="eyebrow">Your starting brief</p><p id="concept-summary" aria-live="polite"></p><div class="actions"><button class="button button-small" id="use-concept" type="button">Use in my enquiry</button><button class="text-button" id="copy-concept" type="button">Copy brief</button></div><p id="maker-status" class="input-note" role="status"></p></div></div></div></div></dialog>
 

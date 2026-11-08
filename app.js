@@ -23,9 +23,9 @@
   function closeMenu(){nav.classList.remove('open');menuButton.setAttribute('aria-expanded','false');}
   menuButton.addEventListener('click',()=>{const open=nav.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(open));});
   nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));
-  document.addEventListener('keydown',event=>{if(event.key==='Escape')closeMenu();});
+  document.addEventListener('keydown',event=>{if(event.key==='Escape'&&nav.classList.contains('open')){closeMenu();menuButton.focus();}});
 
-  function goToContact(){closeMenu();$('contact').scrollIntoView({behavior:reduceMotion()?'instant':'smooth',block:'start'});$('full-name').focus({preventScroll:true});}
+  function goToContact(){closeMenu();if(window.TeodorMotion){window.TeodorMotion.navigate('contact').then(()=>$('full-name').focus({preventScroll:true}));}else{$('contact').scrollIntoView({behavior:'instant',block:'start'});$('full-name').focus({preventScroll:true});}}
   function selectPackage(name,service=selectedService){
     if(!['Essential','Professional','Executive','Monthly plan','Not sure yet'].includes(name))throw new Error('Unknown package');
     $('enquiry-package').value=name;
@@ -59,13 +59,16 @@
     dialog.addEventListener('close',()=>{if(!document.querySelector('dialog[open]'))document.body.style.overflow='';});
   });
   function openDialog(dialog){document.body.style.overflow='hidden';dialog.showModal();}
-  document.querySelectorAll('[data-project]').forEach(button=>button.addEventListener('click',()=>{
-    currentProject=button.dataset.project;const p=projects[currentProject];
+  function openProject(key){
+    if(!projects[key])return;
+    currentProject=key;const p=projects[currentProject];
     $('project-title').textContent=p.title;$('project-platform').textContent=p.platform;
     $('project-dialog-image').src=p.image;$('project-dialog-image').alt=p.title+' website preview';
     $('project-description').textContent=p.description;$('project-tech').textContent=p.tech;$('project-live-link').href=p.url;
-    openDialog($('project-dialog'));
-  }));
+    if(!$('project-dialog').open)openDialog($('project-dialog'));
+  }
+  window.TeodorApp={projects,openProject,goToContact};
+  document.querySelectorAll('[data-project]').forEach(button=>button.addEventListener('click',()=>openProject(button.dataset.project)));
   $('project-enquire').addEventListener('click',()=>{
     const project=projects[currentProject];$('project-dialog').close();selectPackage(currentProject==='wedding'?'Executive':'Not sure yet',currentProject==='wedding'?'wordpress':'website');
     if(!$('requirements').value.trim())$('requirements').value='I would like to discuss a project with a similar direction to the '+project.title+'. My business needs: ';

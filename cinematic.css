@@ -19,7 +19,7 @@
   --accent:#d2b496;
   --font-body:Archivo,Arial,sans-serif;
   --font-mono:'JetBrains Mono',monospace;
-  --container:min(1600px,calc(100% - 96px));
+  --container:min(1400px,calc(100% - 96px));
   --transition-state:450ms;
   --transition-interaction:720ms;
   --transition-open:950ms;
@@ -81,7 +81,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
   backdrop-filter:none
 }
 .header-inner {
-  height:100px
+  height:80px
 }
 .brand {
   font:600 21px/1 Archivo;
@@ -119,7 +119,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
   background:var(--text);
   color:var(--bg);
   border-color:var(--text);
-  font:11px/1.5 var(--font-mono);
+  font:14px/1.5 var(--font-mono);
   letter-spacing:0;
   text-transform:none;
   min-height:48px;
@@ -137,7 +137,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
   border-color:var(--line)
 }
 .text-button {
-  font:11px/1.6 var(--font-mono);
+  font:14px/1.6 var(--font-mono);
   letter-spacing:0;
   text-transform:none;
   min-height:44px;
@@ -175,7 +175,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
   display:flex;
   flex-direction:column;
   justify-content:space-between;
-  padding-top:145px;
+  padding-top:120px;
   padding-bottom:32px;
   gap:0
 }
@@ -190,12 +190,12 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 }
 .hero-copy {
   min-height:0;
-  padding:130px 0 40px;
+  padding:70px 0 60px;
   animation:none;
   pointer-events:auto
 }
 .hero h1 {
-  font-size:clamp(64px,9.7vw,176px);
+  font-size:clamp(64px,9.2vw,148px);
   font-weight:500;
   line-height:.91;
   letter-spacing:-.065em;
@@ -219,7 +219,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
   margin-top:36px
 }
 .hero-description {
-  font:12px/1.85 var(--font-mono);
+  font:18px/1.65 var(--font-body);
   margin:0;
   max-width:330px;
   color:#c3beb8
@@ -319,7 +319,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
   text-transform:none
 }
 .section-heading>p {
-  font:12px/1.9 var(--font-mono);
+  font:16px/1.9 var(--font-body);
   max-width:360px;
   margin-bottom:8px
 }
@@ -357,7 +357,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 .service-card p {
   grid-column:3;
   grid-row:1/3;
-  font:11px/1.9 var(--font-mono);
+  font:14px/1.9 var(--font-body);
   max-width:300px;
   margin:0
 }
@@ -378,7 +378,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
   font-size:26px
 }
 .service-finder p {
-  font:11px/1.8 var(--font-mono)
+  font:14px/1.8 var(--font-body)
 }
 .choice {
   border-radius:0;
@@ -394,7 +394,7 @@ input,select,textarea {
   border-radius:0;
   color:var(--text);
   border-color:#f0ede835;
-  font:12px/1.7 var(--font-mono)
+  font:16px/1.7 var(--font-mono)
 }
 .finder-result {
   border-color:var(--line)
@@ -500,7 +500,7 @@ input,select,textarea {
 }
 .piece-description {
   grid-column:2;
-  font:11px/1.8 var(--font-mono)
+  font:14px/1.8 var(--font-body)
 }
 .piece-tech {
   grid-column:2;
@@ -555,7 +555,7 @@ input,select,textarea {
   border:0;
   border-top:1px solid var(--line);
   padding:15px 0;
-  font:11px/1.5 var(--font-mono);
+  font:14px/1.5 var(--font-mono);
   text-align:left;
   min-width:80px;
   min-height:48px;
@@ -601,7 +601,7 @@ input,select,textarea {
   font-weight:500
 }
 .about-grid p {
-  font:13px/2 var(--font-mono)
+  font:16px/2 var(--font-body)
 }
 .about-values {
   border-color:var(--line)
@@ -614,12 +614,12 @@ input,select,textarea {
   font-size:22px
 }
 .packages-section {
-  background:#eeebe4;
-  color:#171717;
+  background:var(--bg);
+  color:var(--text);
   border:0
 }
 .packages-section p,.packages-section .eyebrow {
-  color:#55534e
+  color:var(--muted)
 }
 .packages-section .section-heading {
   grid-template-columns:1.5fr 1fr
@@ -629,48 +629,48 @@ input,select,textarea {
 }
 .package,.package.featured-package {
   border:0;
-  border-top:1px solid #17171755;
+  border-top:1px solid var(--line);
   background:none;
   border-radius:0;
   padding:30px 28px 20px 0;
   box-shadow:none
 }
 .package+.package {
-  border-left:1px solid #17171733;
+  border-left:1px solid var(--line);
   padding-left:28px
 }
 .package h3 {
   font-size:36px
 }
 .package li {
-  color:#55534e
+  color:var(--muted)
 }
 .package .button {
   background:transparent;
-  border-color:#17171755;
-  color:#171717
+  border-color:var(--text)55;
+  color:var(--text)
 }
 .package .button:hover {
-  background:#171717;
-  color:#eeebe4
+  background:var(--text);
+  color:var(--bg)
 }
 .package-badge {
   background:none;
-  color:#55534e;
+  color:var(--muted);
   border:0;
   font:9px var(--font-mono);
   padding:0
 }
 .monthly-plan {
   background:none;
-  border-color:#17171733;
+  border-color:var(--text)33;
   padding:45px 0 0
 }
 .monthly-plan h3 {
   font-size:36px
 }
 .monthly-plan summary {
-  color:#171717
+  color:var(--text)
 }
 .concept-section {
   background:#101010;
@@ -686,7 +686,7 @@ input,select,textarea {
   font-size:clamp(38px,4.6vw,68px)
 }
 .concept-banner p {
-  font:12px/1.9 var(--font-mono)
+  font:16px/1.9 var(--font-body)
 }
 .faq-section {
   background:var(--bg)
@@ -695,7 +695,7 @@ input,select,textarea {
   gap:100px
 }
 .faq-grid>div>p,.faq-list p {
-  font:12px/1.9 var(--font-mono)
+  font:16px/1.9 var(--font-body)
 }
 .faq-list details {
   border-color:var(--line)
@@ -716,14 +716,14 @@ input,select,textarea {
   font-size:clamp(48px,6.3vw,98px)
 }
 .contact-copy>p {
-  font:12px/1.9 var(--font-mono)
+  font:16px/1.9 var(--font-body)
 }
 .contact-expectations {
   font-family:var(--font-mono);
   margin-block:35px
 }
 .contact-alternatives {
-  font:11px/1.8 var(--font-mono)
+  font:14px/1.8 var(--font-body)
 }
 .contact-alternatives>span {
   color:var(--muted)
@@ -741,7 +741,7 @@ input,select,textarea {
   font-family:var(--font-mono)
 }
 label {
-  font-size:10px
+  font-size:12px
 }
 .selected-package {
   background:#29241d
@@ -752,7 +752,7 @@ label {
   padding-top:45px
 }
 .footer-top>p,.footer-links {
-  font:11px/1.9 var(--font-mono)
+  font:14px/1.9 var(--font-body)
 }
 .footer-bottom {
   border-color:var(--line);
@@ -782,7 +782,7 @@ dialog::backdrop {
   line-height:1.02
 }
 .dialog-body>p {
-  font:12px/1.9 var(--font-mono)
+  font:16px/1.9 var(--font-body)
 }
 .project-dialog {
   width:100%;
@@ -863,7 +863,7 @@ dialog::backdrop {
 }
 @media(min-width:1800px) {
   .hero-copy {
-    padding-top:160px
+    padding-top:90px
   }
   .gallery-field {
     height:65vh
@@ -880,7 +880,7 @@ dialog::backdrop {
     font-size:10.2vw
   }
   .hero-copy {
-    padding-top:180px
+    padding-top:80px
   }
   .sculpture {
     left:45%;
@@ -925,7 +925,7 @@ dialog::backdrop {
     --container:calc(100% - 40px)
   }
   .header-inner {
-    height:82px
+    height:72px
   }
   .brand {
     font-size:19px
@@ -940,13 +940,13 @@ dialog::backdrop {
   }
   .site-header nav {
     position:fixed;
-    inset:82px 0 auto;
+    inset:72px 0 auto;
     background:#111;
     display:none;
     align-items:stretch;
     padding:25px 28px 35px;
     border:0;
-    max-height:calc(100dvh - 82px);
+    max-height:calc(100dvh - 72px);
     overflow:auto
   }
   .site-header nav.open {
@@ -974,7 +974,7 @@ dialog::backdrop {
     text-align:right
   }
   .hero-copy {
-    padding:220px 0 20px
+    padding:70px 0 40px
   }
   .hero h1 {
     font-size:clamp(46px,11vw,84px);
@@ -985,13 +985,13 @@ dialog::backdrop {
     margin-top:25px
   }
   .hero-description {
-    font-size:10px;
+    font-size:12px;
     line-height:1.9
   }
   .hero-cta {
     margin-top:22px;
     min-width:185px;
-    font-size:10px
+    font-size:12px
   }
   .hero-foot {
     font-size:8px;
@@ -1024,7 +1024,7 @@ dialog::backdrop {
     font-size:clamp(38px,10vw,64px)
   }
   .section-heading>p {
-    font-size:11px;
+    font-size:14px;
     margin-top:25px;
     max-width:340px
   }
@@ -1042,7 +1042,7 @@ dialog::backdrop {
   }
   .service-card p {
     max-width:100%;
-    font-size:11px
+    font-size:14px
   }
   .service-finder {
     display:block;
@@ -1115,7 +1115,7 @@ dialog::backdrop {
     font-size:8px
   }
   .piece-description {
-    font-size:11px;
+    font-size:14px;
     max-width:300px
   }
   .piece-tech {
@@ -1138,7 +1138,7 @@ dialog::backdrop {
   .gallery-index button {
     min-width:50px;
     padding:12px 0;
-    font-size:10px
+    font-size:12px
   }
   .gallery-index button span {
     font-size:8px
@@ -1154,7 +1154,7 @@ dialog::backdrop {
     display:block
   }
   .about-grid p {
-    font-size:11px
+    font-size:14px
   }
   .about-values {
     margin-top:35px
@@ -1164,7 +1164,7 @@ dialog::backdrop {
   }
   .package,.package.featured-package,.package+.package {
     border:0;
-    border-top:1px solid #17171744;
+    border-top:1px solid var(--line);
     padding:25px 0;
     min-height:0
   }
@@ -1261,7 +1261,7 @@ dialog::backdrop {
     min-height:44px
   }
   .transition-curtain span {
-    font-size:10px
+    font-size:12px
   }
 }
 @media(prefers-reduced-motion:reduce) {
@@ -1318,7 +1318,7 @@ body:not(.motion-ready) .gallery-footer {
 }
 @media(prefers-reduced-motion:no-preference) and (min-width:761px) {
   .hero .sculpture i {
-    animation:slab-drift 7s var(--ease-out-expo) infinite alternate;
+    animation:slab-drift 7s var(--ease-out-expo) 2 alternate;
     animation-delay:calc(var(--i)*-.45s)
   }
   @keyframes slab-drift {
@@ -1356,14 +1356,14 @@ h1[tabindex="-1"]:focus,h2[tabindex="-1"]:focus {
   outline:none
 }
 .site-header.on-paper {
-  background:linear-gradient(#eeebe4f5,#eeebe400);
-  color:#171717
+  background:linear-gradient(#070707f5,#07070700);
+  color:var(--text)
 }
 .site-header.on-paper nav>a,.site-header.on-paper .menu-toggle {
-  color:#333
+  color:var(--muted)
 }
 .site-header.on-paper nav>a[aria-current] {
-  color:#7c5533
+  color:var(--accent)
 }
 .piece-copy {
   transition:opacity 320ms var(--ease-transition),transform 450ms var(--ease-out-expo)
@@ -1388,4 +1388,51 @@ h1[tabindex="-1"]:focus,h2[tabindex="-1"]:focus {
   .site-header.on-paper nav.open>a {
     color:var(--text)
   }
+}
+
+/* Audit refinement: readable content, compact hero, one dark palette. */
+.section-heading { display:block; }
+.section-heading > p { max-width:58ch; margin:24px 0 0; }
+.hero-grid { justify-content:center; }
+.hero-identity { justify-content:flex-start; }
+.hero-support { justify-content:flex-start; gap:64px; align-items:center; }
+.hero-description { max-width:420px; }
+.hero-cta { background:var(--text); color:var(--bg); border:1px solid var(--text); padding:16px 22px; min-width:210px; }
+.hero-cta:hover { background:var(--accent); color:var(--bg); border-color:var(--accent); }
+.hero-foot { display:none; }
+.hero-identity span:last-child { display:none; }
+.sculpture { opacity:.35; left:65%; }
+.horizon { display:none; }
+.service-number { text-transform:none; font-size:12px; }
+.service-card p { max-width:52ch; }
+.package p, .package li, .monthly-plan p { font-size:16px; line-height:1.75; }
+.package.featured-package { border-top:2px solid var(--accent); }
+.package-badge { color:var(--accent); }
+.package > .button { white-space:nowrap; font-size:12px; padding-inline:16px; }
+label { font-size:14px; color:var(--text); }
+input, select, textarea { font:16px/1.6 var(--font-body); }
+input::placeholder, textarea::placeholder { color:var(--muted); }
+.form-intro, .input-note, .privacy-note { font:13px/1.75 var(--font-body); color:var(--muted); }
+.faq-list p { max-width:62ch; }
+button:active, .button:active { transform:translateY(1px); }
+.image-action { display:none; }
+@media (max-width:1024px) and (min-width:761px) {
+  .packages-grid { grid-template-columns:1fr; }
+  .package + .package { border-left:0; padding-left:0; }
+}
+@media (max-width:760px) {
+  .hero-grid { min-height: min(780px,100dvh); padding-top:120px; padding-bottom:48px; }
+  .hero-copy { padding:48px 0 0; }
+  .hero h1 { font-size:clamp(42px,10.5vw,78px); line-height:1.04; }
+  .hero-description { font:16px/1.65 var(--font-body); }
+  .hero-support { margin-top:28px; }
+  .hero-cta { margin-top:28px; font-size:13px; }
+  .sculpture { left:45%; opacity:.18; }
+  .service-card p, .about-grid p, .piece-description, .section-heading > p { font-size:16px; }
+  .piece-tech { font-size:12px; }
+  .gallery-field { height:560px; min-height:560px; }
+  .gallery-index { gap:14px; }
+  .gallery-index button span { font-size:10px; }
+  .form-row { grid-template-columns:1fr; }
+  .footer-top { grid-template-columns:1fr 1fr; }
 }
